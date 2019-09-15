@@ -1,0 +1,6 @@
+/home/yogi/Project/2019_AUTUMN/Algorithmn/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/yogi/Project/2019_AUTUMN/Algorithmn/cmake-build-debug/CMakeFiles/Algorithmn.dir
+/home/yogi/Project/2019_AUTUMN/Algorithmn/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/yogi/Project/2019_AUTUMN/Algorithmn/cmake-build-debug/print_group/CMakeFiles/rebuild_cache.dir
+/home/yogi/Project/2019_AUTUMN/Algorithmn/cmake-build-debug/print_group/CMakeFiles/print_group.dir
+/home/yogi/Project/2019_AUTUMN/Algorithmn/cmake-build-debug/print_group/CMakeFiles/edit_cache.dir
