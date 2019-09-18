@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yogi/Project/2019_AUTUMN/Algorithmn/main.cpp" "/home/yogi/Project/2019_AUTUMN/Algorithmn/cmake-build-debug/CMakeFiles/Algorithmn.dir/main.cpp.o"
+  "/home/yogi/Project/2019_AUTUMN/Algorithm/main.cpp" "/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles/Algorithmn.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

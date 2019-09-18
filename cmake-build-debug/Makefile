@@ -48,10 +48,10 @@ RM = /home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6262.62/bin/c
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yogi/Project/2019_AUTUMN/Algorithmn
+CMAKE_SOURCE_DIR = /home/yogi/Project/2019_AUTUMN/Algorithm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yogi/Project/2019_AUTUMN/Algorithmn/cmake-build-debug
+CMAKE_BINARY_DIR = /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019_AUTUMN/Algorithmn/cmake-build-debug/CMakeFiles /home/yogi/Project/2019_AUTUMN/Algorithmn/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019_AUTUMN/Algorithmn/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -124,17 +124,69 @@ Algorithmn/fast:
 .PHONY : Algorithmn/fast
 
 #=============================================================================
-# Target rules for targets named print_group
+# Target rules for targets named print_arragement2
 
 # Build rule for target.
-print_group: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 print_group
-.PHONY : print_group
+print_arragement2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 print_arragement2
+.PHONY : print_arragement2
 
 # fast build rule for target.
-print_group/fast:
-	$(MAKE) -f print_group/CMakeFiles/print_group.dir/build.make print_group/CMakeFiles/print_group.dir/build
-.PHONY : print_group/fast
+print_arragement2/fast:
+	$(MAKE) -f print_combination/CMakeFiles/print_arragement2.dir/build.make print_combination/CMakeFiles/print_arragement2.dir/build
+.PHONY : print_arragement2/fast
+
+#=============================================================================
+# Target rules for targets named combination
+
+# Build rule for target.
+combination: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 combination
+.PHONY : combination
+
+# fast build rule for target.
+combination/fast:
+	$(MAKE) -f print_combination/CMakeFiles/combination.dir/build.make print_combination/CMakeFiles/combination.dir/build
+.PHONY : combination/fast
+
+#=============================================================================
+# Target rules for targets named print_arragement
+
+# Build rule for target.
+print_arragement: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 print_arragement
+.PHONY : print_arragement
+
+# fast build rule for target.
+print_arragement/fast:
+	$(MAKE) -f print_combination/CMakeFiles/print_arragement.dir/build.make print_combination/CMakeFiles/print_arragement.dir/build
+.PHONY : print_arragement/fast
+
+#=============================================================================
+# Target rules for targets named number_split
+
+# Build rule for target.
+number_split: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 number_split
+.PHONY : number_split
+
+# fast build rule for target.
+number_split/fast:
+	$(MAKE) -f number_split/CMakeFiles/number_split.dir/build.make number_split/CMakeFiles/number_split.dir/build
+.PHONY : number_split/fast
+
+#=============================================================================
+# Target rules for targets named number_split2
+
+# Build rule for target.
+number_split2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 number_split2
+.PHONY : number_split2
+
+# fast build rule for target.
+number_split2/fast:
+	$(MAKE) -f number_split/CMakeFiles/number_split2.dir/build.make number_split/CMakeFiles/number_split2.dir/build
+.PHONY : number_split2/fast
 
 main.o: main.cpp.o
 
@@ -172,7 +224,11 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Algorithmn"
 	@echo "... edit_cache"
-	@echo "... print_group"
+	@echo "... print_arragement2"
+	@echo "... combination"
+	@echo "... print_arragement"
+	@echo "... number_split"
+	@echo "... number_split2"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -33,7 +33,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.14.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.14.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.14.5/CMakeSystem.cmake"
-  "../print_group/CMakeLists.txt"
+  "../number_split/CMakeLists.txt"
+  "../print_combination/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -45,11 +46,16 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "print_group/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "print_combination/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "number_split/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Algorithmn.dir/DependInfo.cmake"
-  "print_group/CMakeFiles/print_group.dir/DependInfo.cmake"
+  "print_combination/CMakeFiles/print_arragement2.dir/DependInfo.cmake"
+  "print_combination/CMakeFiles/combination.dir/DependInfo.cmake"
+  "print_combination/CMakeFiles/print_arragement.dir/DependInfo.cmake"
+  "number_split/CMakeFiles/number_split.dir/DependInfo.cmake"
+  "number_split/CMakeFiles/number_split2.dir/DependInfo.cmake"
   )

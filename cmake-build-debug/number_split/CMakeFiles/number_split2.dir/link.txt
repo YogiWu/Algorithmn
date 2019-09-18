@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/number_split2.dir/number_split2.cpp.o  -o number_split2 

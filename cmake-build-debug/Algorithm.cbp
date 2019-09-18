@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Algorithm"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\print_combination\;CMake Files\number_split\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Algorithmn">
+				<Option output="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/Algorithmn" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Algorithmn"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Algorithmn/fast">
+				<Option output="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/Algorithmn" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 Algorithmn/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="print_arragement2">
+				<Option output="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/print_arragement2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/Makefile&quot;  VERBOSE=1 print_arragement2"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="print_arragement2/fast">
+				<Option output="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/print_arragement2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/Makefile&quot;  VERBOSE=1 print_arragement2/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="combination">
+				<Option output="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/combination" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/Makefile&quot;  VERBOSE=1 combination"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="combination/fast">
+				<Option output="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/combination" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/Makefile&quot;  VERBOSE=1 combination/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="print_arragement">
+				<Option output="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/print_arragement" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/Makefile&quot;  VERBOSE=1 print_arragement"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="print_arragement/fast">
+				<Option output="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/print_arragement" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/Makefile&quot;  VERBOSE=1 print_arragement/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="number_split">
+				<Option output="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split/number_split" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split/Makefile&quot;  VERBOSE=1 number_split"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="number_split/fast">
+				<Option output="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split/number_split" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split/Makefile&quot;  VERBOSE=1 number_split/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="number_split2">
+				<Option output="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split/number_split2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split/Makefile&quot;  VERBOSE=1 number_split2"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="number_split2/fast">
+				<Option output="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split/number_split2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split/Makefile&quot;  VERBOSE=1 number_split2/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/yogi/Project/2019_AUTUMN/Algorithm/main.cpp">
+			<Option target="Algorithmn"/>
+		</Unit>
+		<Unit filename="/home/yogi/Project/2019_AUTUMN/Algorithm/number_split/main.cpp">
+			<Option target="number_split"/>
+		</Unit>
+		<Unit filename="/home/yogi/Project/2019_AUTUMN/Algorithm/number_split/number_split2.cpp">
+			<Option target="number_split2"/>
+		</Unit>
+		<Unit filename="/home/yogi/Project/2019_AUTUMN/Algorithm/print_combination/combination.cpp">
+			<Option target="combination"/>
+		</Unit>
+		<Unit filename="/home/yogi/Project/2019_AUTUMN/Algorithm/print_combination/fully_arrangement.cpp">
+			<Option target="print_arragement"/>
+		</Unit>
+		<Unit filename="/home/yogi/Project/2019_AUTUMN/Algorithm/print_combination/fully_arrangement2.cpp">
+			<Option target="print_arragement2"/>
+		</Unit>
+		<Unit filename="/home/yogi/Project/2019_AUTUMN/Algorithm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/yogi/Project/2019_AUTUMN/Algorithm/print_combination/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\print_combination\"/>
+		</Unit>
+		<Unit filename="/home/yogi/Project/2019_AUTUMN/Algorithm/number_split/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\number_split\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

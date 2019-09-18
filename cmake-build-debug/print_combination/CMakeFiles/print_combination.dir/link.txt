@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/print_combination.dir/fully_arrangement.cpp.o CMakeFiles/print_combination.dir/fully_arrangement2.cpp.o  -o print_combination 

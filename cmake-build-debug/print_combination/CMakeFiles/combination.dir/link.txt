@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/combination.dir/combination.cpp.o  -o combination 
