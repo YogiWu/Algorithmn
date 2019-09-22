@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yogi/Project/2019_AUTUMN/Algorithm/number_split/number_split2.cpp" "/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split/CMakeFiles/number_split2.dir/number_split2.cpp.o"
+  "/home/yogi/Project/2019/Algorithmn/number_split/number_split2.cpp" "/home/yogi/Project/2019/Algorithmn/cmake-build-debug/number_split/CMakeFiles/number_split2.dir/number_split2.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

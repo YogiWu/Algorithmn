@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6262.62/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6603.37/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6262.62/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6603.37/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yogi/Project/2019_AUTUMN/Algorithm
+CMAKE_SOURCE_DIR = /home/yogi/Project/2019/Algorithmn
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug
+CMAKE_BINARY_DIR = /home/yogi/Project/2019/Algorithmn/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include print_combination/CMakeFiles/print_arragement.dir/depend.make
@@ -59,16 +59,16 @@ include print_combination/CMakeFiles/print_arragement.dir/flags.make
 
 print_combination/CMakeFiles/print_arragement.dir/fully_arrangement.cpp.o: print_combination/CMakeFiles/print_arragement.dir/flags.make
 print_combination/CMakeFiles/print_arragement.dir/fully_arrangement.cpp.o: ../print_combination/fully_arrangement.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object print_combination/CMakeFiles/print_arragement.dir/fully_arrangement.cpp.o"
-	cd /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/print_arragement.dir/fully_arrangement.cpp.o -c /home/yogi/Project/2019_AUTUMN/Algorithm/print_combination/fully_arrangement.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object print_combination/CMakeFiles/print_arragement.dir/fully_arrangement.cpp.o"
+	cd /home/yogi/Project/2019/Algorithmn/cmake-build-debug/print_combination && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/print_arragement.dir/fully_arrangement.cpp.o -c /home/yogi/Project/2019/Algorithmn/print_combination/fully_arrangement.cpp
 
 print_combination/CMakeFiles/print_arragement.dir/fully_arrangement.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/print_arragement.dir/fully_arrangement.cpp.i"
-	cd /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yogi/Project/2019_AUTUMN/Algorithm/print_combination/fully_arrangement.cpp > CMakeFiles/print_arragement.dir/fully_arrangement.cpp.i
+	cd /home/yogi/Project/2019/Algorithmn/cmake-build-debug/print_combination && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yogi/Project/2019/Algorithmn/print_combination/fully_arrangement.cpp > CMakeFiles/print_arragement.dir/fully_arrangement.cpp.i
 
 print_combination/CMakeFiles/print_arragement.dir/fully_arrangement.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/print_arragement.dir/fully_arrangement.cpp.s"
-	cd /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yogi/Project/2019_AUTUMN/Algorithm/print_combination/fully_arrangement.cpp -o CMakeFiles/print_arragement.dir/fully_arrangement.cpp.s
+	cd /home/yogi/Project/2019/Algorithmn/cmake-build-debug/print_combination && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yogi/Project/2019/Algorithmn/print_combination/fully_arrangement.cpp -o CMakeFiles/print_arragement.dir/fully_arrangement.cpp.s
 
 # Object files for target print_arragement
 print_arragement_OBJECTS = \
@@ -80,8 +80,8 @@ print_arragement_EXTERNAL_OBJECTS =
 print_combination/print_arragement: print_combination/CMakeFiles/print_arragement.dir/fully_arrangement.cpp.o
 print_combination/print_arragement: print_combination/CMakeFiles/print_arragement.dir/build.make
 print_combination/print_arragement: print_combination/CMakeFiles/print_arragement.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable print_arragement"
-	cd /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/print_arragement.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable print_arragement"
+	cd /home/yogi/Project/2019/Algorithmn/cmake-build-debug/print_combination && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/print_arragement.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 print_combination/CMakeFiles/print_arragement.dir/build: print_combination/print_arragement
@@ -89,10 +89,10 @@ print_combination/CMakeFiles/print_arragement.dir/build: print_combination/print
 .PHONY : print_combination/CMakeFiles/print_arragement.dir/build
 
 print_combination/CMakeFiles/print_arragement.dir/clean:
-	cd /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination && $(CMAKE_COMMAND) -P CMakeFiles/print_arragement.dir/cmake_clean.cmake
+	cd /home/yogi/Project/2019/Algorithmn/cmake-build-debug/print_combination && $(CMAKE_COMMAND) -P CMakeFiles/print_arragement.dir/cmake_clean.cmake
 .PHONY : print_combination/CMakeFiles/print_arragement.dir/clean
 
 print_combination/CMakeFiles/print_arragement.dir/depend:
-	cd /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yogi/Project/2019_AUTUMN/Algorithm /home/yogi/Project/2019_AUTUMN/Algorithm/print_combination /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/CMakeFiles/print_arragement.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yogi/Project/2019/Algorithmn/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yogi/Project/2019/Algorithmn /home/yogi/Project/2019/Algorithmn/print_combination /home/yogi/Project/2019/Algorithmn/cmake-build-debug /home/yogi/Project/2019/Algorithmn/cmake-build-debug/print_combination /home/yogi/Project/2019/Algorithmn/cmake-build-debug/print_combination/CMakeFiles/print_arragement.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : print_combination/CMakeFiles/print_arragement.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/yogi/Project/2019_AUTUMN/Algorithm/print_combination
+# Install script for directory: /home/yogi/Project/2019/Algorithmn/print_combination
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

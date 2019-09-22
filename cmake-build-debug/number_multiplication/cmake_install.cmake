@@ -1,4 +1,4 @@
-# Install script for directory: /home/yogi/Project/2019/Algorithmn/number_split
+# Install script for directory: /home/yogi/Project/2019/Algorithmn/number_multiplication
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

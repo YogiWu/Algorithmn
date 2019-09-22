@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/number_multiplication.dir/main.cpp.o  -o number_multiplication 
