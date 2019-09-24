@@ -11,10 +11,8 @@ using namespace std;
 string padZero (string s, int size) {
     int pad_num = size - s.size();
 
-    while(pad_num != 0) {
-        s = '0' + s;
-        pad_num--;
-    }
+    s = string(pad_num, '0') + s;
+
     return s;
 }
 
