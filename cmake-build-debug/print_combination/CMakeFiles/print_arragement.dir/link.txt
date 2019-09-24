@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/print_arragement.dir/fully_arrangement.cpp.o  -o print_arragement 
