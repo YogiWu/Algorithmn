@@ -1,1 +1,1 @@
-add_executable(number_multiplication main.cpp)
+add_executable(number_multiplication BigInt.h main.cpp)
