@@ -3,11 +3,9 @@
 //
 
 #include <iostream>
-#include <cstring>
 #include "BigInt.h"
 
 using namespace std;
-
 
 class BigINT:public BI::BigInt
 {

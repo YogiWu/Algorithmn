@@ -1,0 +1,174 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js">
+<link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+<link rel="stylesheet" href="https://gitcdn.xyz/repo/goessner/mdmath/master/css/texmath.css">
+<link rel="stylesheet" href="https://gitcdn.xyz/repo/goessner/mdmath/master/css/vscode-texmath.css">
+
+</head><body class="markdown-body">
+<h3 id="homework-report-1" data-line="0" class="code-line">HOMEWORK REPORT</h3>
+<hr>
+<h4 id="e4b8aae4babae4bfa1e681af-1" data-line="4" class="code-line">个人信息</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">姓名</th>
+<th style="text-align:center">学号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">吴宇杰</td>
+<td style="text-align:center">19215028</td>
+</tr>
+</tbody>
+</table>
+<h4 id="e9a298e79baee58685e5aeb9-1" data-line="10" class="code-line">题目内容</h4>
+<pre data-line="12" class="code-line"><code>给定两个长整数，输出整数乘法结果
+</code></pre>
+<h4 id="e8a7a3e9a298e6809de8b7af-1" data-line="14" class="code-line">解题思路</h4>
+<pre data-line="16" class="code-line"><code>将两个整数a1,a2分割,a1分割为a,b两块,a2分割为c,d两块
+因为a1×a2=ab×10^n+(a+b)(c+d)×10^n/2+cd
+即可实现利用三次较少位数的乘法来得到原来的乘运算结果
+</code></pre>
+<h4 id="e5ae9ee78eb0e4bba3e7a081-1" data-line="20" class="code-line">实现代码</h4>
+<pre><code data-line="22" class="code-line language-c++"><div><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">"BigInt.h"</span></span>
+
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BigINT</span>:</span><span class="hljs-keyword">public</span> BI::BigInt
+{
+<span class="hljs-keyword">public</span>:
+    BigINT ():BigInt() {}
+
+    BigINT (<span class="hljs-keyword">const</span> BigInt &amp; n):BigInt(n) {}
+
+    BigINT (basic_string&lt;<span class="hljs-keyword">char</span>&gt; c):BigInt(<span class="hljs-built_in">string</span>(c)) {}
+
+    <span class="hljs-keyword">void</span> <span class="hljs-keyword">operator</span> &lt;&lt; (<span class="hljs-keyword">int</span> n) {
+        values += <span class="hljs-built_in">string</span>(n, <span class="hljs-string">'0'</span>);
+    }
+
+    <span class="hljs-function"><span class="hljs-built_in">string</span> <span class="hljs-title">to_string</span> <span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> values;
+    }
+
+    BigINT <span class="hljs-keyword">operator</span>* (BigINT &amp;n) {
+        <span class="hljs-keyword">if</span> (values.size() == <span class="hljs-number">1</span> || n.to_string().size()) {
+            <span class="hljs-keyword">return</span> BigInt(values) * BigInt(n);
+        }
+
+        BigINT a = values.substr(<span class="hljs-number">0</span>, values.size()/<span class="hljs-number">2</span>+<span class="hljs-number">1</span>);
+        BigINT b = values.substr(values.size()/<span class="hljs-number">2</span>);
+
+        <span class="hljs-built_in">string</span> n2 = n.to_string();
+        BigINT c = n2.substr(<span class="hljs-number">0</span>, n2.size()/<span class="hljs-number">2</span> + <span class="hljs-number">1</span>);
+        BigINT d = n2.substr(n2.size()/<span class="hljs-number">2</span>);
+
+        BigINT ac = a * c;
+        BigINT bd = b * d;
+        BigINT cross = (a+b)*(c+d);
+
+        BigINT acpow = ac;
+        acpow &lt;&lt; (values.size() + n2.size()) /<span class="hljs-number">2</span>;
+
+        BigINT crosspow = cross - ac - bd;
+        crosspow &lt;&lt; (values.size() + n2.size()) / <span class="hljs-number">4</span>;
+
+        <span class="hljs-keyword">return</span> bd + crosspow + acpow;
+    }
+};
+
+<span class="hljs-function"><span class="hljs-built_in">string</span> <span class="hljs-title">padZero</span> <span class="hljs-params">(<span class="hljs-built_in">string</span> s, <span class="hljs-keyword">int</span> size)</span> </span>{
+    <span class="hljs-keyword">int</span> pad_num = size - s.size();
+
+    s = <span class="hljs-built_in">string</span>(pad_num, <span class="hljs-string">'0'</span>) + s;
+
+    <span class="hljs-keyword">return</span> s;
+}
+
+<span class="hljs-function"><span class="hljs-built_in">string</span> <span class="hljs-title">longPlus</span> <span class="hljs-params">(<span class="hljs-built_in">string</span> s1, <span class="hljs-built_in">string</span> s2, <span class="hljs-keyword">bool</span> neg)</span> </span>{
+    <span class="hljs-keyword">int</span> size = s1.size() &gt; s2.size() ? s1.size() : s2.size();
+
+    s1 = padZero(s1, size);
+    s2 = padZero(s2, size);
+
+    <span class="hljs-keyword">int</span> carry = <span class="hljs-number">0</span>;
+    <span class="hljs-built_in">string</span> res;
+
+    <span class="hljs-keyword">while</span> (size &gt; <span class="hljs-number">0</span>) {
+        <span class="hljs-keyword">int</span> num1 = s1[size - <span class="hljs-number">1</span>] - <span class="hljs-string">'0'</span>;
+        <span class="hljs-keyword">int</span> num2 = s2[size - <span class="hljs-number">1</span>] - <span class="hljs-string">'0'</span>;
+
+        num2 = neg ? <span class="hljs-number">10</span>-num2 : num2;
+
+        <span class="hljs-keyword">int</span> sum = num1 + num2 + carry;
+
+        res = to_string(sum % <span class="hljs-number">10</span>) + res;
+        carry = neg ? sum &gt; <span class="hljs-number">10</span> ? <span class="hljs-number">0</span>: <span class="hljs-number">-1</span> : sum / <span class="hljs-number">10</span>;
+
+        size--;
+    }
+
+    <span class="hljs-keyword">return</span> carry &amp;&amp; !neg ? <span class="hljs-string">"1"</span> + res : res;
+}
+
+<span class="hljs-function"><span class="hljs-built_in">string</span> <span class="hljs-title">multiply</span> <span class="hljs-params">(<span class="hljs-built_in">string</span> s1, <span class="hljs-built_in">string</span> s2)</span> </span>{
+    <span class="hljs-keyword">int</span> size = s1.size() &gt; s2.size() ? s1.size() : s2.size();
+
+    <span class="hljs-keyword">if</span> (size == <span class="hljs-number">1</span>) {
+        <span class="hljs-keyword">return</span> to_string(stoi(s1) * stoi(s2));
+    }
+
+    size = size % <span class="hljs-number">2</span> ? size+<span class="hljs-number">1</span> : size ;
+
+    s1 = padZero(s1, size);
+    s2 = padZero(s2, size);
+
+    <span class="hljs-built_in">string</span> a = s1.substr(<span class="hljs-number">0</span>, size/<span class="hljs-number">2</span>);
+    <span class="hljs-built_in">string</span> b = s1.substr(size/<span class="hljs-number">2</span>);
+    <span class="hljs-built_in">string</span> c = s2.substr(<span class="hljs-number">0</span>, size/<span class="hljs-number">2</span>);
+    <span class="hljs-built_in">string</span> d = s2.substr(size/<span class="hljs-number">2</span>);
+
+    <span class="hljs-built_in">string</span> ac = multiply(a, c);
+    <span class="hljs-built_in">string</span> bd = multiply(b ,d);
+    <span class="hljs-built_in">string</span> cross_mul = multiply(longPlus(a,b, <span class="hljs-literal">false</span>), longPlus(c, d, <span class="hljs-literal">false</span>));
+
+    <span class="hljs-built_in">string</span> acpow = ac + <span class="hljs-built_in">string</span>(size, <span class="hljs-string">'0'</span>);
+    <span class="hljs-built_in">string</span> crosspow = longPlus(longPlus(cross_mul, ac, <span class="hljs-literal">true</span>), bd, <span class="hljs-literal">true</span>) + <span class="hljs-built_in">string</span>(size / <span class="hljs-number">2</span>, <span class="hljs-string">'0'</span>);
+
+    <span class="hljs-keyword">return</span> longPlus(longPlus(bd, crosspow ,<span class="hljs-literal">false</span>), acpow, <span class="hljs-literal">false</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span> <span class="hljs-params">()</span> </span>{
+    BigINT s1, s2;
+
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">"first number:"</span>;
+    <span class="hljs-built_in">cin</span> &gt;&gt; s1;
+
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">"second number:"</span>;
+    <span class="hljs-built_in">cin</span> &gt;&gt; s2;
+
+    <span class="hljs-built_in">cout</span> &lt;&lt; s1*s2;
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</div></code></pre>
+<h4 id="e6b58be8af95e6a0b7e4be8b-1" data-line="147" class="code-line">测试样例</h4>
+<pre data-line="149" class="code-line"><code>输入:
+first number: 432678212
+second number: 32312312
+输出:
+13980833381746144
+</code></pre>
+<h4 id="e680bbe7bb93-1" data-line="155" class="code-line">总结</h4>
+<pre data-line="157" class="code-line"><code>用字符串可以实现高精度数的存储
+使用分治将原来的乘法分解
+</code></pre>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi><mo>(</mo><mi>n</mi><mo>)</mo><mo>=</mo><mn>3</mn><mi>T</mi><mo>(</mo><mi>n</mi><mi mathvariant="normal">/</mi><mn>2</mn><mo>)</mo><mo>+</mo><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo><mo>=</mo><mi>O</mi><mo>(</mo><msup><mi>n</mi><mrow><mi>l</mi><mi>o</mi><msub><mi>g</mi><mn>2</mn></msub><mn>3</mn></mrow></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">
+T(n)=3T(n/2)+O(n)=O(n^{log_23})
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">3</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mord">/</span><span class="mord">2</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.149108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8991079999999999em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.01968em;">l</span><span class="mord mathdefault mtight">o</span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:-0.03588em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mord mtight">3</span></span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span></eqn></section><hr>
+<p data-line="166" class="code-line">可将原来需要<eq><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></eq>时间复杂度的乘法运算减少为<eq><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mrow><mi>l</mi><mi>o</mi><msub><mi>g</mi><mn>2</mn></msub><mn>3</mn></mrow></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n^{log_23})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0991079999999998em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8491079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.01968em;">l</span><span class="mord mathdefault mtight">o</span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:-0.03588em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mord mtight">3</span></span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></eq></p>
+
+</body></html>

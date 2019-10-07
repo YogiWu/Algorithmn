@@ -64,7 +64,7 @@ int liner_search (vector<int> target, int k)
 }
 
 int main () {
-    const int LIST_LENGTH = 2000;
+    const int LIST_LENGTH = 200;
 
     const int k = LIST_LENGTH /2;
 
