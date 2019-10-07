@@ -1,4 +1,4 @@
-# Install script for directory: /home/yogi/Project/2019/Algorithmn
+# Install script for directory: /home/yogi/Project/2019_AUTUMN/Algorithm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,17 +39,27 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/yogi/Project/2019/Algorithmn/cmake-build-debug/print_combination/cmake_install.cmake")
+  include("/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/print_combination/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/yogi/Project/2019/Algorithmn/cmake-build-debug/number_split/cmake_install.cmake")
+  include("/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/yogi/Project/2019/Algorithmn/cmake-build-debug/number_multiplication/cmake_install.cmake")
+  include("/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_multiplication/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/liner_search/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/diamond_search/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -60,5 +70,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/yogi/Project/2019/Algorithmn/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6603.37/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6262.62/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6603.37/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6262.62/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yogi/Project/2019/Algorithmn
+CMAKE_SOURCE_DIR = /home/yogi/Project/2019_AUTUMN/Algorithm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yogi/Project/2019/Algorithmn/cmake-build-debug
+CMAKE_BINARY_DIR = /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include number_split/CMakeFiles/number_split2.dir/depend.make
@@ -59,16 +59,16 @@ include number_split/CMakeFiles/number_split2.dir/flags.make
 
 number_split/CMakeFiles/number_split2.dir/number_split2.cpp.o: number_split/CMakeFiles/number_split2.dir/flags.make
 number_split/CMakeFiles/number_split2.dir/number_split2.cpp.o: ../number_split/number_split2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object number_split/CMakeFiles/number_split2.dir/number_split2.cpp.o"
-	cd /home/yogi/Project/2019/Algorithmn/cmake-build-debug/number_split && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/number_split2.dir/number_split2.cpp.o -c /home/yogi/Project/2019/Algorithmn/number_split/number_split2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object number_split/CMakeFiles/number_split2.dir/number_split2.cpp.o"
+	cd /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/number_split2.dir/number_split2.cpp.o -c /home/yogi/Project/2019_AUTUMN/Algorithm/number_split/number_split2.cpp
 
 number_split/CMakeFiles/number_split2.dir/number_split2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/number_split2.dir/number_split2.cpp.i"
-	cd /home/yogi/Project/2019/Algorithmn/cmake-build-debug/number_split && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yogi/Project/2019/Algorithmn/number_split/number_split2.cpp > CMakeFiles/number_split2.dir/number_split2.cpp.i
+	cd /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yogi/Project/2019_AUTUMN/Algorithm/number_split/number_split2.cpp > CMakeFiles/number_split2.dir/number_split2.cpp.i
 
 number_split/CMakeFiles/number_split2.dir/number_split2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/number_split2.dir/number_split2.cpp.s"
-	cd /home/yogi/Project/2019/Algorithmn/cmake-build-debug/number_split && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yogi/Project/2019/Algorithmn/number_split/number_split2.cpp -o CMakeFiles/number_split2.dir/number_split2.cpp.s
+	cd /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yogi/Project/2019_AUTUMN/Algorithm/number_split/number_split2.cpp -o CMakeFiles/number_split2.dir/number_split2.cpp.s
 
 # Object files for target number_split2
 number_split2_OBJECTS = \
@@ -80,8 +80,8 @@ number_split2_EXTERNAL_OBJECTS =
 number_split/number_split2: number_split/CMakeFiles/number_split2.dir/number_split2.cpp.o
 number_split/number_split2: number_split/CMakeFiles/number_split2.dir/build.make
 number_split/number_split2: number_split/CMakeFiles/number_split2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable number_split2"
-	cd /home/yogi/Project/2019/Algorithmn/cmake-build-debug/number_split && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/number_split2.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable number_split2"
+	cd /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/number_split2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 number_split/CMakeFiles/number_split2.dir/build: number_split/number_split2
@@ -89,10 +89,10 @@ number_split/CMakeFiles/number_split2.dir/build: number_split/number_split2
 .PHONY : number_split/CMakeFiles/number_split2.dir/build
 
 number_split/CMakeFiles/number_split2.dir/clean:
-	cd /home/yogi/Project/2019/Algorithmn/cmake-build-debug/number_split && $(CMAKE_COMMAND) -P CMakeFiles/number_split2.dir/cmake_clean.cmake
+	cd /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split && $(CMAKE_COMMAND) -P CMakeFiles/number_split2.dir/cmake_clean.cmake
 .PHONY : number_split/CMakeFiles/number_split2.dir/clean
 
 number_split/CMakeFiles/number_split2.dir/depend:
-	cd /home/yogi/Project/2019/Algorithmn/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yogi/Project/2019/Algorithmn /home/yogi/Project/2019/Algorithmn/number_split /home/yogi/Project/2019/Algorithmn/cmake-build-debug /home/yogi/Project/2019/Algorithmn/cmake-build-debug/number_split /home/yogi/Project/2019/Algorithmn/cmake-build-debug/number_split/CMakeFiles/number_split2.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yogi/Project/2019_AUTUMN/Algorithm /home/yogi/Project/2019_AUTUMN/Algorithm/number_split /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_split/CMakeFiles/number_split2.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : number_split/CMakeFiles/number_split2.dir/depend
 

@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6603.37/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6262.62/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6603.37/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6262.62/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yogi/Project/2019/Algorithmn
+CMAKE_SOURCE_DIR = /home/yogi/Project/2019_AUTUMN/Algorithm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yogi/Project/2019/Algorithmn/cmake-build-debug
+CMAKE_BINARY_DIR = /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/yogi/Project/2019/Algorithmn/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6603.37/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6262.62/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6603.37/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6262.62/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/yogi/Project/2019/Algorithmn/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles /home/yogi/Project/2019/Algorithmn/cmake-build-debug/number_multiplication/CMakeFiles/progress.marks
-	cd /home/yogi/Project/2019/Algorithmn/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 number_multiplication/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles 0
+	cd /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/number_multiplication/CMakeFiles/progress.marks
+	cd /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 number_multiplication/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/yogi/Project/2019/Algorithmn/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 number_multiplication/clean
+	cd /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 number_multiplication/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/yogi/Project/2019/Algorithmn/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 number_multiplication/preinstall
+	cd /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 number_multiplication/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/yogi/Project/2019/Algorithmn/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 number_multiplication/preinstall
+	cd /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 number_multiplication/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/yogi/Project/2019/Algorithmn/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 number_multiplication/CMakeFiles/number_multiplication.dir/rule:
-	cd /home/yogi/Project/2019/Algorithmn/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 number_multiplication/CMakeFiles/number_multiplication.dir/rule
+	cd /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 number_multiplication/CMakeFiles/number_multiplication.dir/rule
 .PHONY : number_multiplication/CMakeFiles/number_multiplication.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ number_multiplication: number_multiplication/CMakeFiles/number_multiplication.di
 
 # fast build rule for target.
 number_multiplication/fast:
-	cd /home/yogi/Project/2019/Algorithmn/cmake-build-debug && $(MAKE) -f number_multiplication/CMakeFiles/number_multiplication.dir/build.make number_multiplication/CMakeFiles/number_multiplication.dir/build
+	cd /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug && $(MAKE) -f number_multiplication/CMakeFiles/number_multiplication.dir/build.make number_multiplication/CMakeFiles/number_multiplication.dir/build
 .PHONY : number_multiplication/fast
 
 main.o: main.cpp.o
@@ -131,7 +131,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/yogi/Project/2019/Algorithmn/cmake-build-debug && $(MAKE) -f number_multiplication/CMakeFiles/number_multiplication.dir/build.make number_multiplication/CMakeFiles/number_multiplication.dir/main.cpp.o
+	cd /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug && $(MAKE) -f number_multiplication/CMakeFiles/number_multiplication.dir/build.make number_multiplication/CMakeFiles/number_multiplication.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -140,7 +140,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/yogi/Project/2019/Algorithmn/cmake-build-debug && $(MAKE) -f number_multiplication/CMakeFiles/number_multiplication.dir/build.make number_multiplication/CMakeFiles/number_multiplication.dir/main.cpp.i
+	cd /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug && $(MAKE) -f number_multiplication/CMakeFiles/number_multiplication.dir/build.make number_multiplication/CMakeFiles/number_multiplication.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -149,7 +149,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/yogi/Project/2019/Algorithmn/cmake-build-debug && $(MAKE) -f number_multiplication/CMakeFiles/number_multiplication.dir/build.make number_multiplication/CMakeFiles/number_multiplication.dir/main.cpp.s
+	cd /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug && $(MAKE) -f number_multiplication/CMakeFiles/number_multiplication.dir/build.make number_multiplication/CMakeFiles/number_multiplication.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/yogi/Project/2019/Algorithmn/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

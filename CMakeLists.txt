@@ -3,8 +3,12 @@ project(Algorithm)
 
 set(CMAKE_CXX_STANDARD 17)
 
+include_directories(utils)
+
 add_subdirectory(print_combination)
 add_subdirectory(number_split)
 add_subdirectory(number_multiplication)
+add_subdirectory(liner_search)
+add_subdirectory(diamond_search)
 
 add_executable(Algorithmn main.cpp)

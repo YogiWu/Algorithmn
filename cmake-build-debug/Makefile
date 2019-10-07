@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6603.37/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6262.62/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6603.37/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6262.62/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yogi/Project/2019/Algorithmn
+CMAKE_SOURCE_DIR = /home/yogi/Project/2019_AUTUMN/Algorithm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yogi/Project/2019/Algorithmn/cmake-build-debug
+CMAKE_BINARY_DIR = /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/yogi/Project/2019/Algorithmn/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6603.37/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6262.62/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6603.37/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6262.62/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles /home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -201,6 +201,32 @@ number_multiplication/fast:
 	$(MAKE) -f number_multiplication/CMakeFiles/number_multiplication.dir/build.make number_multiplication/CMakeFiles/number_multiplication.dir/build
 .PHONY : number_multiplication/fast
 
+#=============================================================================
+# Target rules for targets named liner_search
+
+# Build rule for target.
+liner_search: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 liner_search
+.PHONY : liner_search
+
+# fast build rule for target.
+liner_search/fast:
+	$(MAKE) -f liner_search/CMakeFiles/liner_search.dir/build.make liner_search/CMakeFiles/liner_search.dir/build
+.PHONY : liner_search/fast
+
+#=============================================================================
+# Target rules for targets named diamond_search
+
+# Build rule for target.
+diamond_search: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 diamond_search
+.PHONY : diamond_search
+
+# fast build rule for target.
+diamond_search/fast:
+	$(MAKE) -f diamond_search/CMakeFiles/diamond_search.dir/build.make diamond_search/CMakeFiles/diamond_search.dir/build
+.PHONY : diamond_search/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -243,6 +269,8 @@ help:
 	@echo "... number_split"
 	@echo "... number_split2"
 	@echo "... number_multiplication"
+	@echo "... liner_search"
+	@echo "... diamond_search"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

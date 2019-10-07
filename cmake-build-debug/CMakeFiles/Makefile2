@@ -50,19 +50,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6603.37/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6262.62/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6603.37/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/yogi/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6262.62/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yogi/Project/2019/Algorithmn
+CMAKE_SOURCE_DIR = /home/yogi/Project/2019_AUTUMN/Algorithm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yogi/Project/2019/Algorithmn/cmake-build-debug
+CMAKE_BINARY_DIR = /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/Algorithmn.dir
@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /home/yogi/Project/2019/Algorithmn/cmake-build-debug
 CMakeFiles/Algorithmn.dir/all:
 	$(MAKE) -f CMakeFiles/Algorithmn.dir/build.make CMakeFiles/Algorithmn.dir/depend
 	$(MAKE) -f CMakeFiles/Algorithmn.dir/build.make CMakeFiles/Algorithmn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Algorithmn"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Algorithmn"
 .PHONY : CMakeFiles/Algorithmn.dir/all
 
 # Include target in all.
@@ -81,9 +81,9 @@ all: CMakeFiles/Algorithmn.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Algorithmn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Algorithmn.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Algorithmn.dir/rule
 
 # Convenience name for target.
@@ -130,7 +130,7 @@ print_combination/preinstall:
 print_combination/CMakeFiles/print_arragement2.dir/all:
 	$(MAKE) -f print_combination/CMakeFiles/print_arragement2.dir/build.make print_combination/CMakeFiles/print_arragement2.dir/depend
 	$(MAKE) -f print_combination/CMakeFiles/print_arragement2.dir/build.make print_combination/CMakeFiles/print_arragement2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target print_arragement2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target print_arragement2"
 .PHONY : print_combination/CMakeFiles/print_arragement2.dir/all
 
 # Include target in all.
@@ -140,9 +140,9 @@ all: print_combination/CMakeFiles/print_arragement2.dir/all
 
 # Build rule for subdir invocation for target.
 print_combination/CMakeFiles/print_arragement2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 print_combination/CMakeFiles/print_arragement2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles 0
 .PHONY : print_combination/CMakeFiles/print_arragement2.dir/rule
 
 # Convenience name for target.
@@ -167,7 +167,7 @@ clean: print_combination/CMakeFiles/print_arragement2.dir/clean
 print_combination/CMakeFiles/combination.dir/all:
 	$(MAKE) -f print_combination/CMakeFiles/combination.dir/build.make print_combination/CMakeFiles/combination.dir/depend
 	$(MAKE) -f print_combination/CMakeFiles/combination.dir/build.make print_combination/CMakeFiles/combination.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target combination"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target combination"
 .PHONY : print_combination/CMakeFiles/combination.dir/all
 
 # Include target in all.
@@ -177,9 +177,9 @@ all: print_combination/CMakeFiles/combination.dir/all
 
 # Build rule for subdir invocation for target.
 print_combination/CMakeFiles/combination.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 print_combination/CMakeFiles/combination.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles 0
 .PHONY : print_combination/CMakeFiles/combination.dir/rule
 
 # Convenience name for target.
@@ -204,7 +204,7 @@ clean: print_combination/CMakeFiles/combination.dir/clean
 print_combination/CMakeFiles/print_arragement.dir/all:
 	$(MAKE) -f print_combination/CMakeFiles/print_arragement.dir/build.make print_combination/CMakeFiles/print_arragement.dir/depend
 	$(MAKE) -f print_combination/CMakeFiles/print_arragement.dir/build.make print_combination/CMakeFiles/print_arragement.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target print_arragement"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target print_arragement"
 .PHONY : print_combination/CMakeFiles/print_arragement.dir/all
 
 # Include target in all.
@@ -214,9 +214,9 @@ all: print_combination/CMakeFiles/print_arragement.dir/all
 
 # Build rule for subdir invocation for target.
 print_combination/CMakeFiles/print_arragement.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 print_combination/CMakeFiles/print_arragement.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles 0
 .PHONY : print_combination/CMakeFiles/print_arragement.dir/rule
 
 # Convenience name for target.
@@ -261,7 +261,7 @@ number_split/preinstall:
 number_split/CMakeFiles/number_split.dir/all:
 	$(MAKE) -f number_split/CMakeFiles/number_split.dir/build.make number_split/CMakeFiles/number_split.dir/depend
 	$(MAKE) -f number_split/CMakeFiles/number_split.dir/build.make number_split/CMakeFiles/number_split.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target number_split"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target number_split"
 .PHONY : number_split/CMakeFiles/number_split.dir/all
 
 # Include target in all.
@@ -271,9 +271,9 @@ all: number_split/CMakeFiles/number_split.dir/all
 
 # Build rule for subdir invocation for target.
 number_split/CMakeFiles/number_split.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 number_split/CMakeFiles/number_split.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles 0
 .PHONY : number_split/CMakeFiles/number_split.dir/rule
 
 # Convenience name for target.
@@ -298,7 +298,7 @@ clean: number_split/CMakeFiles/number_split.dir/clean
 number_split/CMakeFiles/number_split2.dir/all:
 	$(MAKE) -f number_split/CMakeFiles/number_split2.dir/build.make number_split/CMakeFiles/number_split2.dir/depend
 	$(MAKE) -f number_split/CMakeFiles/number_split2.dir/build.make number_split/CMakeFiles/number_split2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target number_split2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target number_split2"
 .PHONY : number_split/CMakeFiles/number_split2.dir/all
 
 # Include target in all.
@@ -308,9 +308,9 @@ all: number_split/CMakeFiles/number_split2.dir/all
 
 # Build rule for subdir invocation for target.
 number_split/CMakeFiles/number_split2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 number_split/CMakeFiles/number_split2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles 0
 .PHONY : number_split/CMakeFiles/number_split2.dir/rule
 
 # Convenience name for target.
@@ -353,7 +353,7 @@ number_multiplication/preinstall:
 number_multiplication/CMakeFiles/number_multiplication.dir/all:
 	$(MAKE) -f number_multiplication/CMakeFiles/number_multiplication.dir/build.make number_multiplication/CMakeFiles/number_multiplication.dir/depend
 	$(MAKE) -f number_multiplication/CMakeFiles/number_multiplication.dir/build.make number_multiplication/CMakeFiles/number_multiplication.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target number_multiplication"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target number_multiplication"
 .PHONY : number_multiplication/CMakeFiles/number_multiplication.dir/all
 
 # Include target in all.
@@ -363,9 +363,9 @@ all: number_multiplication/CMakeFiles/number_multiplication.dir/all
 
 # Build rule for subdir invocation for target.
 number_multiplication/CMakeFiles/number_multiplication.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 number_multiplication/CMakeFiles/number_multiplication.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019/Algorithmn/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles 0
 .PHONY : number_multiplication/CMakeFiles/number_multiplication.dir/rule
 
 # Convenience name for target.
@@ -380,6 +380,116 @@ number_multiplication/CMakeFiles/number_multiplication.dir/clean:
 
 # clean rule for target.
 clean: number_multiplication/CMakeFiles/number_multiplication.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory liner_search
+
+# Convenience name for "all" pass in the directory.
+liner_search/all: liner_search/CMakeFiles/liner_search.dir/all
+
+.PHONY : liner_search/all
+
+# Convenience name for "clean" pass in the directory.
+liner_search/clean: liner_search/CMakeFiles/liner_search.dir/clean
+
+.PHONY : liner_search/clean
+
+# Convenience name for "preinstall" pass in the directory.
+liner_search/preinstall:
+
+.PHONY : liner_search/preinstall
+
+#=============================================================================
+# Target rules for target liner_search/CMakeFiles/liner_search.dir
+
+# All Build rule for target.
+liner_search/CMakeFiles/liner_search.dir/all:
+	$(MAKE) -f liner_search/CMakeFiles/liner_search.dir/build.make liner_search/CMakeFiles/liner_search.dir/depend
+	$(MAKE) -f liner_search/CMakeFiles/liner_search.dir/build.make liner_search/CMakeFiles/liner_search.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target liner_search"
+.PHONY : liner_search/CMakeFiles/liner_search.dir/all
+
+# Include target in all.
+all: liner_search/CMakeFiles/liner_search.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+liner_search/CMakeFiles/liner_search.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 liner_search/CMakeFiles/liner_search.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles 0
+.PHONY : liner_search/CMakeFiles/liner_search.dir/rule
+
+# Convenience name for target.
+liner_search: liner_search/CMakeFiles/liner_search.dir/rule
+
+.PHONY : liner_search
+
+# clean rule for target.
+liner_search/CMakeFiles/liner_search.dir/clean:
+	$(MAKE) -f liner_search/CMakeFiles/liner_search.dir/build.make liner_search/CMakeFiles/liner_search.dir/clean
+.PHONY : liner_search/CMakeFiles/liner_search.dir/clean
+
+# clean rule for target.
+clean: liner_search/CMakeFiles/liner_search.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory diamond_search
+
+# Convenience name for "all" pass in the directory.
+diamond_search/all: diamond_search/CMakeFiles/diamond_search.dir/all
+
+.PHONY : diamond_search/all
+
+# Convenience name for "clean" pass in the directory.
+diamond_search/clean: diamond_search/CMakeFiles/diamond_search.dir/clean
+
+.PHONY : diamond_search/clean
+
+# Convenience name for "preinstall" pass in the directory.
+diamond_search/preinstall:
+
+.PHONY : diamond_search/preinstall
+
+#=============================================================================
+# Target rules for target diamond_search/CMakeFiles/diamond_search.dir
+
+# All Build rule for target.
+diamond_search/CMakeFiles/diamond_search.dir/all:
+	$(MAKE) -f diamond_search/CMakeFiles/diamond_search.dir/build.make diamond_search/CMakeFiles/diamond_search.dir/depend
+	$(MAKE) -f diamond_search/CMakeFiles/diamond_search.dir/build.make diamond_search/CMakeFiles/diamond_search.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target diamond_search"
+.PHONY : diamond_search/CMakeFiles/diamond_search.dir/all
+
+# Include target in all.
+all: diamond_search/CMakeFiles/diamond_search.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+diamond_search/CMakeFiles/diamond_search.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 diamond_search/CMakeFiles/diamond_search.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yogi/Project/2019_AUTUMN/Algorithm/cmake-build-debug/CMakeFiles 0
+.PHONY : diamond_search/CMakeFiles/diamond_search.dir/rule
+
+# Convenience name for target.
+diamond_search: diamond_search/CMakeFiles/diamond_search.dir/rule
+
+.PHONY : diamond_search
+
+# clean rule for target.
+diamond_search/CMakeFiles/diamond_search.dir/clean:
+	$(MAKE) -f diamond_search/CMakeFiles/diamond_search.dir/build.make diamond_search/CMakeFiles/diamond_search.dir/clean
+.PHONY : diamond_search/CMakeFiles/diamond_search.dir/clean
+
+# clean rule for target.
+clean: diamond_search/CMakeFiles/diamond_search.dir/clean
 
 .PHONY : clean
 
