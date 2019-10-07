@@ -4,4 +4,9 @@ The purpose of this project is to record my homework change
 
 #### HomeWork List 
 
-1. print group
+-[x] print group
+-[x] number split
+-[x] number multiplication
+-[x] liner search
+-[ ] matrix multiplication
+-[ ] max length sub seq
