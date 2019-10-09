@@ -32,6 +32,13 @@ public:
         }
         cout << endl;
     }
+
+    template <typename T>
+    static void printVector (vector<vector<T>> &target) {
+        for(auto &x:target) {
+            printVector(x);
+        }
+    }
 };
 
 #endif //ALGORITHM_ARRAY_UTILS_H
