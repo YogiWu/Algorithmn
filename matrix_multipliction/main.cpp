@@ -3,7 +3,6 @@
 //
 #include <iostream>
 #include <vector>
-#include <algorithm>
 #include "array_utils.h"
 
 using namespace std;
@@ -11,10 +10,6 @@ using namespace std;
 vector<vector<int>> dp;
 
 vector<int> matrix;
-
-void dfs (int l, int r) {
-
-}
 
 int minMatrixMulti (int n) {
     int res, tmp;
@@ -43,6 +38,24 @@ int minMatrixMulti (int n) {
     return dp[0][n-1];
 }
 
+void printRes (int l, int r) {
+    if (l == r) {
+        cout << l;
+        return;
+    }
+    int k = l;
+    while (k < r) {
+        if (dp[l][k] + dp[k+1][r] + matrix[l] * matrix[k+1] * matrix[r+1] == dp[l][r]) {
+            break;
+        }
+        k++;
+    }
+    cout << "(";
+    printRes(l, k);
+    cout << "*";
+    printRes(k+1, r);
+    cout << ")";
+}
 
 int main () {
     int n = 5;
@@ -55,7 +68,9 @@ int main () {
         dp.push_back(vector<int>(n, 0));
     }
 
-    cout << minMatrixMulti(n);
+    cout << minMatrixMulti(n) << endl;
+
+    printRes(0, n-1);
 
     return 0;
 }

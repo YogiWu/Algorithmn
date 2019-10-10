@@ -1,1 +1,2 @@
 add_executable(matrix_multiplication main.cpp)
+add_executable(matrix_multiplication2 recursive.cpp)
