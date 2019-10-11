@@ -58,7 +58,7 @@ void printRes (int l, int r) {
 }
 
 int main () {
-    int n = 5;
+    int n = 50;
 
     // generate n matrix row number and column number
     matrix = ArrayUtils::genrateRandomVector(n+1, 10, 100);
