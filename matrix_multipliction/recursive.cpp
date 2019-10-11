@@ -33,7 +33,7 @@ int minMatrixMulti (vector<int> &matrix) {
 
 
 int main () {
-    int n = 5;
+    int n = 10;
 
     // generate n matrix row number and column number
     vector<int> matrix = ArrayUtils::genrateRandomVector(n+1, 10, 100);

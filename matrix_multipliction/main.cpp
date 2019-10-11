@@ -40,7 +40,7 @@ int minMatrixMulti (int n) {
 
 void printRes (int l, int r) {
     if (l == r) {
-        cout << l;
+        cout <<  l;
         return;
     }
     int k = l;
@@ -58,7 +58,7 @@ void printRes (int l, int r) {
 }
 
 int main () {
-    int n = 5;
+    int n = 10;
 
     // generate n matrix row number and column number
     matrix = ArrayUtils::genrateRandomVector(n+1, 10, 100);
