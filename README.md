@@ -8,5 +8,6 @@ The purpose of this project is to record my homework change
 - [x] number split
 - [x] number multiplication
 - [x] liner search
-- [ ] matrix multiplication
-- [ ] max length sub seq
+- [x] matrix multiplication
+- [x] max length sub seq
+- [ ] optimal binary search tree

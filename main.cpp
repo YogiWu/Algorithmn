@@ -5,6 +5,6 @@ using namespace std;
 int main() {
     int a = 1 >> 2;
     a = a << 2;
-    cout << to_string(a) ;
+    cout << 'z' + 1 ;
     return 0;
 }

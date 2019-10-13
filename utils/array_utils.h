@@ -13,7 +13,7 @@ using namespace std;
 
 class ArrayUtils{
 public:
-    static vector<int> genrateRandomVector(int n, int l, int r, int change= false)
+    static vector<int> genrateRandomVector(int n, int l, int r, bool change= false)
     {
         vector<int> res;
 
@@ -23,6 +23,38 @@ public:
         }
 
         return res;
+    }
+
+    static string genrateRandomString (int n, bool lower_only= true, bool change = false)
+    {
+        string s;
+
+        if (change) srand(clock());
+        for (int i = 0; i < n; ++i) {
+            char temp = 'a' + rand() % 26;
+
+            if (!lower_only & rand() % 2) {
+                temp = toupper(temp);
+            }
+
+            s += temp;
+        }
+
+        return s;
+    }
+
+    template <typename T>
+    static T randomSwap (T &target, int ratio) {
+        T newTarget = target;
+
+        int total = newTarget.size();
+        int n = total * ratio / 100;
+
+        for (int i = 0; i < n; ++i) {
+            swap(newTarget[rand() % total], newTarget[rand() % total]);
+        }
+
+        return newTarget;
     }
 
     template <typename T>
