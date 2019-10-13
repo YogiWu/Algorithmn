@@ -1,53 +1,55 @@
 //
-// Created by yogi on 2019/10/11.
+// Created by yogi on 2019/9/22.
 //
+
+// can't use dp because the optimal solution of the sub problem can't use in the original problem
 #include <iostream>
 #include <vector>
-#include <algorithm>
 #include "array_utils.h"
 
 using namespace std;
 
 vector<int> matrix;
-vector<int> dp;
 
-int findNum (int n, int direction) {
-    n += direction;
-    while (n >= 0 && n <= matrix.size()-1) {
-        if (matrix[n] != 0) {
-            return matrix[n];
+int minMatrixMulti (int state) {
+    int min = -1;
+
+    if (matrix.size() == 3) {
+        return matrix[0] * matrix[1] * matrix[2];
+    }
+
+//    int n = matrix.size() -1;
+//    for (int i=0;i < n-1;i++) {
+//        vector<int> tmp(matrix);
+//        tmp.erase(tmp.begin()+i+1);
+//
+//        int res = minMatrixMulti(tmp) + matrix[i]* matrix[i+1] * matrix[i+2];
+//        if (min == -1) {
+//            min = res;
+//        } else {
+//            if (res < min) {
+//                min = res;
+//            }
+//        }
+//    }
+    return min;
+}
+
+int noUse (int n, int direction, int state) {
+    int res = 1 << n;
+
+    res = res << direction;
+
+    int times = 0;
+    while (res >0 && res < state) {
+        if (res | state == 0) {
+            return n + times*direction -1;
         }
-        n += direction;
-    }
-}
-
-int minMatrixMulti () {
-    int n = matrix.size() -1;
-
-    for (int i=1;i<n;i++) {
-        dp.push_back(i);
+        res >> direction;
+        times++;
     }
 
-    sort(dp.begin(), dp.end(), [](int l, int r) { return matrix[l] > matrix[r]; });
-
-    int res = 0;
-    for (auto &x:dp) {
-        res += findNum(x, -1) * matrix[x] * findNum(x, 1);
-        matrix[x] = 0;
-    }
-
-    return res;
-}
-
-void printRes () {
-    int n = matrix.size() -1;
-
-    vector<string> res(n+2, "");
-
-    for (auto &x:dp) {
-        res[x-1] += "(";
-        res[x+1] += ")";
-    }
+    return -1;
 }
 
 int main () {
@@ -57,9 +59,9 @@ int main () {
     matrix = ArrayUtils::genrateRandomVector(n+1, 10, 100);
     ArrayUtils::printVector(matrix);
 
-    cout << minMatrixMulti() << endl;
+    cout << minMatrixMulti(0) << endl;
 
-    printRes();
+    cout << noUse(2, 1, 34);
 
     return 0;
 }
