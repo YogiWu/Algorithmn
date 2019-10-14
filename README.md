@@ -10,4 +10,4 @@ The purpose of this project is to record my homework change
 - [x] liner search
 - [x] matrix multiplication
 - [x] max length sub seq
-- [ ] optimal binary search tree
+- [x] optimal binary search tree
