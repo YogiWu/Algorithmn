@@ -11,6 +11,7 @@ add_subdirectory(number_multiplication)
 add_subdirectory(liner_search)
 add_subdirectory(matrix_multipliction)
 add_subdirectory(max_length_subseq)
+add_subdirectory(optimal_BST)
 
 add_subdirectory(diamond_search)
 
