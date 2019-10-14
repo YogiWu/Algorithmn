@@ -9,6 +9,7 @@
 #include "array_utils.h"
 
 #include "recursive.cpp"
+#include "dp.cpp"
 
 using namespace std;
 
@@ -33,6 +34,9 @@ int main ()
     cout << accumulate(keyProList.begin(), keyProList.end(), 0.0) << endl;
 
     cout << recursive::optimal_BST(keyList, keyProList, 0, keyList.size()-1) << endl;
+    cout << dp::optimal_BST(keyList, keyProList) << endl;
+
+    dp::print_BST();
 
     return 0;
 }

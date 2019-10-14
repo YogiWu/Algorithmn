@@ -16,17 +16,15 @@ namespace recursive{
             double left_res = optimal_BST(keyList, keyProList, l, l);
             double right_res = optimal_BST(keyList, keyProList, r, r);
 
-            double left_root_res = left_res + right_res + keyProList[2*l] + keyProList[2*l+1] - keyProList[2*(l+1)];
-            double right_root_res = left_res + right_res + keyProList[2*(r+1)] + keyProList[2*l+1] - keyProList[2*r];
+            double left_root_res = left_res + right_res + keyProList[2*(r+1)] + keyProList[2*r+1] - keyProList[2*r];
+            double right_root_res = left_res + right_res + keyProList[2*l] + keyProList[2*l+1] - keyProList[2*(l+1)];
 
             return min(left_root_res, right_root_res);
         }
 
         double min = numeric_limits<double>::max();
         for(int i=l+1; i<r; i++) {
-            double left_res = optimal_BST(keyList, keyProList, l, i-1) + accumulate(keyProList.begin()+l*2, keyProList.begin()+i*2+1, 0.0);
-            double right_res = optimal_BST(keyList, keyProList, i+1, r) + accumulate(keyProList.begin()+(i+1)*2, keyProList.begin()+r*2+3, 0.0);
-            double res = left_res + right_res + keyProList[2*i +1];
+            double res = optimal_BST(keyList, keyProList, l, i-1) + optimal_BST(keyList, keyProList, i+1, r) + accumulate(keyProList.begin()+l*2, keyProList.begin()+r*2+3, 0.0);
 
             min = res < min ? res : min;
         }
