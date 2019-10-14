@@ -12,21 +12,21 @@ using namespace std;
 template <typename T>
 class BSTUtils{
 public:
-    static class BSTNode{
+    class BSTNode{
     public:
         T key;
         BSTNode* left;
         BSTNode* right;
 
         BSTNode (T key) {
-            key = key;
+            this -> key = key;
             left = NULL;
             right = NULL;
         }
     };
 
     static BSTNode* generateBSTNode(T key) {
-        return BSTNode(key);
+        return new BSTNode(key);
     }
 
     static void LDR(BSTNode* rootNode, void fn(BSTNode*)) {
@@ -34,6 +34,19 @@ public:
         LDR(rootNode->left, fn);
         fn(rootNode);
         LDR(rootNode->right, fn);
+    }
+
+    static void print_BST (BSTNode* root) {
+        if (root == NULL) return;
+        cout << "(";
+        print_BST(root->left);
+        cout << ")";
+
+        cout << "(" << root->key << ")";
+
+        cout << "(";
+        print_BST(root->right);
+        cout << ")";
     }
 };
 

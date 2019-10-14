@@ -96,8 +96,6 @@ namespace dp{
     void print_BST () {
         auto root = generateBST(0, _keyList.size()-1);
 
-        BSTUtils<int>::LDR(root, [](BSTUtils<int>::BSTNode *a) {
-            cout << "(" << a->key << ")" << endl;
-        });
+        BSTUtils<int>::print_BST(root);
     }
 }
