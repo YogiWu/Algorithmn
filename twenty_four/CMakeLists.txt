@@ -1,0 +1,1 @@
+add_executable(twenty_four main.cpp)

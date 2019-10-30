@@ -25,6 +25,16 @@ public:
         }
     };
 
+    static void clearBST(BSTNode* root) {
+        if (root) {
+            clearBST(root->left);
+            clearBST(root->right);
+
+            delete(root);
+            root = NULL;
+        }
+    }
+
     static BSTNode* generateBSTNode(T key) {
         return new BSTNode(key);
     }
@@ -36,7 +46,34 @@ public:
         LDR(rootNode->right, fn);
     }
 
+    static void LDR(BSTNode* rootNode, void nodeFn(BSTNode*), void hookFn(int)) {
+        if (rootNode == NULL) return;
+        hookFn(0);
+        LDR(rootNode->left, nodeFn, hookFn);
+        hookFn(1);
+        nodeFn(rootNode);
+        hookFn(2);
+        LDR(rootNode->right, nodeFn, hookFn);
+        hookFn(3);
+    }
+
     static void print_BST (BSTNode* root) {
+//        LDR(root, [](BSTNode *node) { cout << node->key; }, [](int hookType) {
+//            switch (hookType) {
+//                case 0:
+//                    cout << "(";
+//                    break;
+//                case 1:
+//                    cout << ")";
+//                    break;
+//                case 2:
+//                    cout << "(";
+//                    break;
+//                case 3:
+//                    cout << ")";
+//                    break;
+//            }
+//        });
         if (root == NULL) return;
         cout << "(";
         print_BST(root->left);
